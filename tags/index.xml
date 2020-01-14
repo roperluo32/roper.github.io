@@ -6,9 +6,37 @@
     <description>Recent content in Tags on roper的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2020 14:46:11 +0800</lastBuildDate>
     
 	<atom:link href="https://roperluo32.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>github</title>
+      <link>https://roperluo32.github.io/tags/github/</link>
+      <pubDate>Tue, 14 Jan 2020 14:46:11 +0800</pubDate>
+      
+      <guid>https://roperluo32.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitment</title>
+      <link>https://roperluo32.github.io/tags/gitment/</link>
+      <pubDate>Tue, 14 Jan 2020 14:46:11 +0800</pubDate>
+      
+      <guid>https://roperluo32.github.io/tags/gitment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://roperluo32.github.io/tags/hugo/</link>
+      <pubDate>Tue, 14 Jan 2020 14:46:11 +0800</pubDate>
+      
+      <guid>https://roperluo32.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

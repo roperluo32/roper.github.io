@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>测试gitcomment插件 | roper的博客</title>
+
+<link rel="stylesheet" href="https://roperluo32.github.io//css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://roperluo32.github.io/"><h1 class="title is-3">roper的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">January 14, 2020</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">测试gitcomment插件</h1>
+  <div class="content">
+    <h1 id="测试评论插件">测试评论插件</h1>
+<h2 id="这是一篇测试评论插件的文章">这是一篇测试评论插件的文章</h2>
+<p>测试ok后记得要删掉</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+
+<div id="git-comments"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: 'hugo-integrated-gitment-plugin',  
+    owner: 'roperluo32',
+    repo: 'blog_comments',
+    oauth: {
+      client_id: '1ae6012608c6efa00df7',
+      client_secret: '9a02465984066a195249d53f7a778b971878b8ca',
+    }
+  })
+  gitment.render('git-comments')
+</script>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+
