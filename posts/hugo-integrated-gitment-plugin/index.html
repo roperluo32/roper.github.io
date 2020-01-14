@@ -51,21 +51,21 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
   
 </div>
 
-<div id="git-comments"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<div id="disqus_thread"></div>
 <script>
-  var gitment = new Gitment({
-    id: 'hugo-integrated-gitment-plugin',  
-    owner: 'roperluo32',
-    repo: 'blog_comments',
-    oauth: {
-      client_id: '1ae6012608c6efa00df7',
-      client_secret: '9a02465984066a195249d53f7a778b971878b8ca',
-    }
-  })
-  gitment.render('git-comments')
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://roper.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <section class="section">
   <div class="container has-text-centered">
