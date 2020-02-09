@@ -1,308 +1,155 @@
 <!DOCTYPE html>
-<html><head>
-<title>测试gitcomment插件</title>
+<html lang="en">
 
+<head>
+    
 <meta charset="utf-8">
-<meta name="X-UA-Compatible" content="IE=edge">
-<meta name="google-site-verification" content="">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<meta content="telephone=no" name="format-detection">
-<meta name="renderer" content="webkit">
-<meta name="theme-color" content="#ffffff">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>测试gitcomment插件 - roper的博客</title>
+
+<meta name="description" content="测试评论插件 这是一篇测试评论插件的文章 测试ok后记得要删掉" />
+
+
+<link rel="stylesheet" href="https://roperluo32.github.io/css/main.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/src/css/lightgallery.css">
 
 
 
-
-<script src="/vendor/js/jquery.min.js" ></script>
-<script src="/vendor/js/popper.min.js" ></script>
-<script src="/vendor/js/bootstrap.min.js" ></script>
-<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
-<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
-<script src="/vendor/js/vue.min.js" ></script>
-
-
-
-
-<link rel="stylesheet" href="https://roperluo32.github.io/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
-
-<script src="https://roperluo32.github.io//js/loadCSS.js"></script>
-<script src="https://roperluo32.github.io//js/table.js"></script>
+<meta property="og:title" content="测试gitcomment插件" />
+<meta property="og:description" content="测试评论插件 这是一篇测试评论插件的文章 测试ok后记得要删掉" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://roperluo32.github.io/posts/hugo-integrated-gitment-plugin/" />
+<meta property="article:published_time" content="2020-01-14T14:46:11+08:00" />
+<meta property="article:modified_time" content="2020-01-14T14:46:11+08:00" />
+<meta itemprop="name" content="测试gitcomment插件">
+<meta itemprop="description" content="测试评论插件 这是一篇测试评论插件的文章 测试ok后记得要删掉">
+<meta itemprop="datePublished" content="2020-01-14T14:46:11&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-14T14:46:11&#43;08:00" />
+<meta itemprop="wordCount" content="3">
 
 
-<script src="https://roperluo32.github.io//js/toc.js"></script>
 
+<meta itemprop="keywords" content="Hugo,gitment,github," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试gitcomment插件"/>
+<meta name="twitter:description" content="测试评论插件 这是一篇测试评论插件的文章 测试ok后记得要删掉"/>
 
-<script>
-    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
-</script>
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
 
-</head><body>
-    	<div id="app"><div ref="sideContainer" class="side-container">
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="header-placeholder"></div>
     
-    <a class="a-block nav-head false" href="https://roperluo32.github.io/">
+    <header class="header">
+        <div class="wrapper">
+    <div id="sidebar-toggle">TOC</div>
     
-        <div class="nav-title">
-            roper的博客
-        </div>
+    <a class="site-title" href="https://roperluo32.github.io/"></a>
+    
+    <nav class="site-nav">
         
-    </a>
-
-    <div class="nav-link-list">
-        
-        
-    </div>
-
-    
-
-    <div class="nav-footer">
-        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
-<br>
-Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
-<br>
-&copy;
-	
-	2020 roper的博客
-	
-    </div>
-    
-</div><div ref="extraContainer" class="extra-container">
-    
-    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- CATALOG -</center>
-			
-				
-				
-					
-						
-						
-							<ul>
-						
-						
-								<li>
-				 					<a href="#%e6%b5%8b%e8%af%95%e8%af%84%e8%ae%ba%e6%8f%92%e4%bb%b6" v-on:click="closeDrawer" id="测试评论插件-nav">
-										 测试评论插件
-									</a>
-								</li>
-						
-							</ul>
-						
-					
-				
-			
-				
-				
-					
-						
-						
-							<ul>
-						
-							<ul>
-						
-						
-								<li>
-				 					<a href="#%e8%bf%99%e6%98%af%e4%b8%80%e7%af%87%e6%b5%8b%e8%af%95%e8%af%84%e8%ae%ba%e6%8f%92%e4%bb%b6%e7%9a%84%e6%96%87%e7%ab%a0" v-on:click="closeDrawer" id="这是一篇测试评论插件的文章-nav">
-										 这是一篇测试评论插件的文章
-									</a>
-								</li>
-						
-							</ul>
-						
-							</ul>
-						
-					
-				
-			
-	</div>
-
+    </nav>
 </div>
+
+    </header>
+
     
-    <div class="pagination">
-        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
-            <i class="material-icons pagination-action-icon">
-                keyboard_arrow_up
-            </i>
-        </a>
+    <div class="page-content">
+        <div class="wrapper">
+            
+            <div class="col-main">
+                <div class="post">
+    
+    <header class="post-header">
+        <h1 class="post-title">测试gitcomment插件</h1>
+    </header>
+    <article class="post-content">
         
-    </div>
-</div><div class="single-column-drawer-container" ref="drawer"
-     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
-    <div class="drawer-content">
-        <div class="drawer-menu">
-            
-            
-            
-            <div class="toc">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- CATALOG -</center>
-			
-				
-				
-					
-						
-						
-							<ul>
-						
-						
-								<li>
-				 					<a href="#%e6%b5%8b%e8%af%95%e8%af%84%e8%ae%ba%e6%8f%92%e4%bb%b6" v-on:click="closeDrawer" id="测试评论插件-nav">
-										 测试评论插件
-									</a>
-								</li>
-						
-							</ul>
-						
-					
-				
-			
-				
-				
-					
-						
-						
-							<ul>
-						
-							<ul>
-						
-						
-								<li>
-				 					<a href="#%e8%bf%99%e6%98%af%e4%b8%80%e7%af%87%e6%b5%8b%e8%af%95%e8%af%84%e8%ae%ba%e6%8f%92%e4%bb%b6%e7%9a%84%e6%96%87%e7%ab%a0" v-on:click="closeDrawer" id="这是一篇测试评论插件的文章-nav">
-										 这是一篇测试评论插件的文章
-									</a>
-								</li>
-						
-							</ul>
-						
-							</ul>
-						
-					
-				
-			
-	</div>
-
-</div>
-            
-        </div>
-    </div>
-</div>
-<transition name="fade">
-    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
-</transition>
-<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
-    <div ref="navBackground" class="nav-background"></div>
-    <div class="container container-narrow nav-content">
-        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
-            <i class="material-icons">
-                menu
-            </i>
-        </button>
-        <a ref="navTitle" class="navbar-brand" href="https://roperluo32.github.io/">
-            roper的博客
-        </a>
-    </div>
-</nav>
-<div class="single-column-header-container" ref="pageHead"
-     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
-    <a href="https://roperluo32.github.io/">
-        <div class="single-column-header-title">roper的博客</div>
         
-
-    </a>
-</div>
-            <div id="content">
-<div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-shadow">
-        <div class="post">
-            
-            
-            
-
-            <div class="post-head-wrapper-text-only"
-                 style="background-image: url('/')">
-                <div class="post-title">
-                    测试gitcomment插件
-                    <div class="post-meta">
-                        <time itemprop="datePublished">
-                            2020-01-14 14:46
-                        </time>
-
-                        
-
-                        
-                            <i class="material-icons" style="">label</i>
-                            
-                                <a href="/tags/hugo">Hugo</a>
-                                &nbsp;
-                            
-                                <a href="/tags/gitment">gitment</a>
-                                &nbsp;
-                            
-                                <a href="/tags/github">github</a>
-                                &nbsp;
-                            
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="post-body-wrapper">
-                <div class="post-body">
-                    <h1 id="测试评论插件">测试评论插件</h1>
+        
+        
+        
+        
+        <h1 id="测试评论插件">测试评论插件</h1>
 <h2 id="这是一篇测试评论插件的文章">这是一篇测试评论插件的文章</h2>
 <p>测试ok后记得要删掉</p>
 
-                    <HR width="100%" id="EOF">
-                    <p style="color:#777;">Last modified on 2020-01-14</p>
-                </div>
-                
+    </article>
+</div>
             </div>
             
-            
-            <nav class="post-pagination">
+            <div class="col-second">
+                <div class="col-box col-box-author">
+    <img class="avatar" src="" alt="">
+    <div class="col-box-title name"></div>
+    <p></p>
+    <p class="contact">
+    </p>
+</div>
 
-                
-                <a class="newer-posts" href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
-                    Next<br>读书笔记
-                </a>
-                
-                
-                
-                <a class="older-posts" href="https://roperluo32.github.io/posts/my-first-post/">
-                    Previous<br>My First Post
-                </a>
-                
-            </nav>
-            <div class="post-comment-wrapper">
-                
+<div class="col-box">
+    <div class="col-box-title">Newest Posts</div>
+    <ul class="post-list">
+        
+        <li>
+            <a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B02/" class="post-link">读书笔记2</a>
+        </li>
+        
+        <li>
+            <a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-link">读书笔记</a>
+        </li>
+        
+        <li>
+            <a href="https://roperluo32.github.io/posts/hugo-integrated-gitment-plugin/" class="post-link">测试gitcomment插件</a>
+        </li>
+        
+        <li>
+            <a href="https://roperluo32.github.io/posts/my-first-post/" class="post-link">My First Post</a>
+        </li>
+        
+    </ul>
+</div>
 
-
-
+<div class="col-box post-toc hide">
+    <div class="col-box-title">TOC</div>
+</div>
             </div>
         </div>
     </div>
+    
+    <footer class="footer">
+        <div class="wrapper">
+    © 2020    <a href="https://roperluo32.github.io/"></a>
 </div>
+    </footer>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.11.0/dist/jquery.min.js"></script>
 
-            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
-<br>
-Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
-<br>
-&copy;
-	
-	2020 roper的博客
-	</div>
-    	</div>
-    <script src="https://roperluo32.github.io//js/journal.js"></script>
-    </body>
+<script src="/js/easybook.js"></script>
+
+<script src="/js/lazysizes.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery-all.min.js"></script>
+<script src="/js/figure.js"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
