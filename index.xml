@@ -59,8 +59,8 @@
       
       <guid>https://roperluo32.github.io/posts/my-first-post/</guid>
       <description>第一章 整洁代码 童子军规则 让营地比你来时更干净
-graph LR A --- B B--&amp;gt;C[fa:fa-ban forbidden] B--&amp;gt;D(fa:fa-spinner); &amp;lt;/div&amp;gt; 第二章 有意义的命名  选好名字要花时间 一旦发现更好的名字，就替换掉旧的 不好的变量名，无法一眼看出代码是要做什么 public List&amp;lt;int []&amp;gt; getThem () { List&amp;lt;int []&amp;gt; listl = new ArrayList&amp;lt;int []&amp;gt; (); for (int[] x : theList) if (x[OJ == 4) listl.add(x); return listl; } 用了好的变量名，代码的意图一目了然
-public List&amp;lt;Cell&amp;gt; getFlaggedCells () { List&amp;lt;Cell&amp;gt; flaggedCells = new ArrayList&amp;lt;Cell&amp;gt; (); for (Cell cell : gameBoard) if (cell.is Flagged()) flaggedCells.add(cell); return flaggedCells; }   避免误导  不要用有特殊含义的词做变量。比如hp，List 不要使用l，o，1，0等  有意义的变量  不要用a1,a2 不要用asdjwke这种无意义的词，要用有意义的单词 名称长短和作用域大小相对应。作用域越大的变量，名称应该越长  不要加多余的变量前后缀（通过编辑器的高亮就能区分，人眼倾向于看有意义的部分，忽略这些多余的前后缀）  成员变量不要加m_，比如m_state 不要加类型String，比如phoneString 接口不要加I，比如IFactory  类和对象名使用名词，函数和方法使用动词 保持统一  比如fetch，get，retrieve都有获得的意思，统一用一个 再举一个例子controller，manager，driver  多使用程序猿领域语言  比如设计模式（Visitor，Observer等，程序猿一目了然） 比如数据结构（Queue，Stack，Hash等）  第三章 函数  短小，一个函数只做一件事情（无副作用） 函数内语句在同一抽象层级上 避免使用长switch。使用抽象进行隔离 参数控制在2个以下，最好1个。不要有flag参数！！ 分隔指令和询问  不要返回错误码，而要用异常 错误码列表对其它文件是一个巨大耦合，使用异常的派生避免了错误码列表     大师级程序员把系统当作故事来讲，而不是当作程序来写。他们使用选定编程语言提供 的工具构建一种更为丰富且更具表达力的语言，用来讲那个故事。那种领域特定语言的一个 部分，就是描述在系统中发生的各种行为的函数层级</description>
+graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two]  第二章 有意义的命名  选好名字要花时间 一旦发现更好的名字，就替换掉旧的 不好的变量名，无法一眼看出代码是要做什么 public List&amp;lt;int []&amp;gt; getThem () { List&amp;lt;int []&amp;gt; listl = new ArrayList&amp;lt;int []&amp;gt; (); for (int[] x : theList) if (x[OJ == 4) listl.add(x); return listl; } 用了好的变量名，代码的意图一目了然
+public List&amp;lt;Cell&amp;gt; getFlaggedCells () { List&amp;lt;Cell&amp;gt; flaggedCells = new ArrayList&amp;lt;Cell&amp;gt; (); for (Cell cell : gameBoard) if (cell.</description>
     </item>
     
   </channel>
