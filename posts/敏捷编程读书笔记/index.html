@@ -1,107 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html><head>
+<title>读书笔记2</title>
 
-<head>
-    
 <meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<title>读书笔记2 - roper的博客</title>
-
-<meta name="description" content="第一部分 敏捷开发   敏捷软件开发宣言
- 个体和交互 胜过 过程和工具 可以工作的软件 胜过 面面俱到的文档 客户合作 胜过 合同谈判 响应变化 胜过 遵循计划    12 条原则
- 我们最优先要做的是通过尽早的、持续的交付有价值的软件来使客户满意 即使到了开发的后期，也欢迎改变需求。敏捷过程利用变化来为客户创造竞争优势 经常性地交付可以工作的软件，交付的间隔可以从几周到几个月，交付的时间间隔越短越好 在整个项目开发期间，业务人员和开发人员必须天天都在一起工作 围绕被激励起来的个人来构建项目。给他们提供所需要的环境和支持，并且信任他们能够完成工作 在团队内部，最具有效果并且富有效率的传递信息的方法，就是面对面的交谈 工作的软件是首要的进度度量标准 敏捷过程提倡可持续的开发速度。责任人、开发者和用户应该能够保持一个长期的、恒定的开发速度 不断地关注优秀的技能和好的设计会增强敏捷能力 简单~未完成的工作最大化的艺术—一是根本的 最好的构架、需求和设计出自于自组织的团队 每隔一定时间，团队会在如何才能更有效地工作方面进行反省，然后相应地对自己的行为进行 调整    我的几条心得
- 采用TDD测试驱动开发，先写单元测试，再写代码。足够的测试是项目成功的保证 确保类的单一职责原则，保证类和函数的简单 找出经常变化的部分，用抽象来隔离变化 先在业务领域讲故事（写代码），保证业务模型的清晰，可复用。通过依赖反转（DIP）来隔绝所有的其它无关逻辑（数据库，UI，协议等） 保持实现的简单，推迟数据库，协议，web框架的选型    极限编程的军规
- 强调快速迭代（每两周一个迭代，2~3个月一个交付周期） TDD（单元测试&#43;验收测试） 结对编程 最简单的设计，不提前引入不需要的东西 保持可持续的开发速度，不加班    TDD测试驱动开发的好处
- 程序的正确性。显而易见的好处 可测试性。提前发现程序中的耦合并解耦，确保可测试性 不同的观察点。迫使从多个角度考虑即将实现的功能 文档。测试用例就是文档。    验收测试" />
-
-
-<link rel="stylesheet" href="https://roperluo32.github.io/css/main.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/src/css/lightgallery.css">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:title" content="读书笔记2" />
-<meta property="og:description" content="第一部分 敏捷开发   敏捷软件开发宣言
- 个体和交互 胜过 过程和工具 可以工作的软件 胜过 面面俱到的文档 客户合作 胜过 合同谈判 响应变化 胜过 遵循计划    12 条原则
- 我们最优先要做的是通过尽早的、持续的交付有价值的软件来使客户满意 即使到了开发的后期，也欢迎改变需求。敏捷过程利用变化来为客户创造竞争优势 经常性地交付可以工作的软件，交付的间隔可以从几周到几个月，交付的时间间隔越短越好 在整个项目开发期间，业务人员和开发人员必须天天都在一起工作 围绕被激励起来的个人来构建项目。给他们提供所需要的环境和支持，并且信任他们能够完成工作 在团队内部，最具有效果并且富有效率的传递信息的方法，就是面对面的交谈 工作的软件是首要的进度度量标准 敏捷过程提倡可持续的开发速度。责任人、开发者和用户应该能够保持一个长期的、恒定的开发速度 不断地关注优秀的技能和好的设计会增强敏捷能力 简单~未完成的工作最大化的艺术—一是根本的 最好的构架、需求和设计出自于自组织的团队 每隔一定时间，团队会在如何才能更有效地工作方面进行反省，然后相应地对自己的行为进行 调整    我的几条心得
- 采用TDD测试驱动开发，先写单元测试，再写代码。足够的测试是项目成功的保证 确保类的单一职责原则，保证类和函数的简单 找出经常变化的部分，用抽象来隔离变化 先在业务领域讲故事（写代码），保证业务模型的清晰，可复用。通过依赖反转（DIP）来隔绝所有的其它无关逻辑（数据库，UI，协议等） 保持实现的简单，推迟数据库，协议，web框架的选型    极限编程的军规
- 强调快速迭代（每两周一个迭代，2~3个月一个交付周期） TDD（单元测试&#43;验收测试） 结对编程 最简单的设计，不提前引入不需要的东西 保持可持续的开发速度，不加班    TDD测试驱动开发的好处
- 程序的正确性。显而易见的好处 可测试性。提前发现程序中的耦合并解耦，确保可测试性 不同的观察点。迫使从多个角度考虑即将实现的功能 文档。测试用例就是文档。    验收测试" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://roperluo32.github.io/posts/%E6%95%8F%E6%8D%B7%E7%BC%96%E7%A8%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
-<meta property="article:published_time" content="2020-02-09T13:39:08+08:00" />
-<meta property="article:modified_time" content="2020-02-09T13:39:08+08:00" />
-<meta itemprop="name" content="读书笔记2">
-<meta itemprop="description" content="第一部分 敏捷开发   敏捷软件开发宣言
- 个体和交互 胜过 过程和工具 可以工作的软件 胜过 面面俱到的文档 客户合作 胜过 合同谈判 响应变化 胜过 遵循计划    12 条原则
- 我们最优先要做的是通过尽早的、持续的交付有价值的软件来使客户满意 即使到了开发的后期，也欢迎改变需求。敏捷过程利用变化来为客户创造竞争优势 经常性地交付可以工作的软件，交付的间隔可以从几周到几个月，交付的时间间隔越短越好 在整个项目开发期间，业务人员和开发人员必须天天都在一起工作 围绕被激励起来的个人来构建项目。给他们提供所需要的环境和支持，并且信任他们能够完成工作 在团队内部，最具有效果并且富有效率的传递信息的方法，就是面对面的交谈 工作的软件是首要的进度度量标准 敏捷过程提倡可持续的开发速度。责任人、开发者和用户应该能够保持一个长期的、恒定的开发速度 不断地关注优秀的技能和好的设计会增强敏捷能力 简单~未完成的工作最大化的艺术—一是根本的 最好的构架、需求和设计出自于自组织的团队 每隔一定时间，团队会在如何才能更有效地工作方面进行反省，然后相应地对自己的行为进行 调整    我的几条心得
- 采用TDD测试驱动开发，先写单元测试，再写代码。足够的测试是项目成功的保证 确保类的单一职责原则，保证类和函数的简单 找出经常变化的部分，用抽象来隔离变化 先在业务领域讲故事（写代码），保证业务模型的清晰，可复用。通过依赖反转（DIP）来隔绝所有的其它无关逻辑（数据库，UI，协议等） 保持实现的简单，推迟数据库，协议，web框架的选型    极限编程的军规
- 强调快速迭代（每两周一个迭代，2~3个月一个交付周期） TDD（单元测试&#43;验收测试） 结对编程 最简单的设计，不提前引入不需要的东西 保持可持续的开发速度，不加班    TDD测试驱动开发的好处
- 程序的正确性。显而易见的好处 可测试性。提前发现程序中的耦合并解耦，确保可测试性 不同的观察点。迫使从多个角度考虑即将实现的功能 文档。测试用例就是文档。    验收测试">
-<meta itemprop="datePublished" content="2020-02-09T13:39:08&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-09T13:39:08&#43;08:00" />
-<meta itemprop="wordCount" content="117">
+
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="读书笔记2"/>
-<meta name="twitter:description" content="第一部分 敏捷开发   敏捷软件开发宣言
- 个体和交互 胜过 过程和工具 可以工作的软件 胜过 面面俱到的文档 客户合作 胜过 合同谈判 响应变化 胜过 遵循计划    12 条原则
- 我们最优先要做的是通过尽早的、持续的交付有价值的软件来使客户满意 即使到了开发的后期，也欢迎改变需求。敏捷过程利用变化来为客户创造竞争优势 经常性地交付可以工作的软件，交付的间隔可以从几周到几个月，交付的时间间隔越短越好 在整个项目开发期间，业务人员和开发人员必须天天都在一起工作 围绕被激励起来的个人来构建项目。给他们提供所需要的环境和支持，并且信任他们能够完成工作 在团队内部，最具有效果并且富有效率的传递信息的方法，就是面对面的交谈 工作的软件是首要的进度度量标准 敏捷过程提倡可持续的开发速度。责任人、开发者和用户应该能够保持一个长期的、恒定的开发速度 不断地关注优秀的技能和好的设计会增强敏捷能力 简单~未完成的工作最大化的艺术—一是根本的 最好的构架、需求和设计出自于自组织的团队 每隔一定时间，团队会在如何才能更有效地工作方面进行反省，然后相应地对自己的行为进行 调整    我的几条心得
- 采用TDD测试驱动开发，先写单元测试，再写代码。足够的测试是项目成功的保证 确保类的单一职责原则，保证类和函数的简单 找出经常变化的部分，用抽象来隔离变化 先在业务领域讲故事（写代码），保证业务模型的清晰，可复用。通过依赖反转（DIP）来隔绝所有的其它无关逻辑（数据库，UI，协议等） 保持实现的简单，推迟数据库，协议，web框架的选型    极限编程的军规
- 强调快速迭代（每两周一个迭代，2~3个月一个交付周期） TDD（单元测试&#43;验收测试） 结对编程 最简单的设计，不提前引入不需要的东西 保持可持续的开发速度，不加班    TDD测试驱动开发的好处
- 程序的正确性。显而易见的好处 可测试性。提前发现程序中的耦合并解耦，确保可测试性 不同的观察点。迫使从多个角度考虑即将实现的功能 文档。测试用例就是文档。    验收测试"/>
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
+<link rel="stylesheet" href="https://roperluo32.github.io/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
-</head>
+<script src="https://roperluo32.github.io//js/loadCSS.js"></script>
+<script src="https://roperluo32.github.io//js/table.js"></script>
 
-<body>
-    <div class="header-placeholder"></div>
+
+<script src="https://roperluo32.github.io//js/toc.js"></script>
+
+
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
     
-    <header class="header">
-        <div class="wrapper">
-    <div id="sidebar-toggle">TOC</div>
+    <a class="a-block nav-head false" href="https://roperluo32.github.io/">
     
-    <a class="site-title" href="https://roperluo32.github.io/"></a>
-    
-    <nav class="site-nav">
+        <div class="nav-title">
+            roper的博客
+        </div>
         
-    </nav>
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+	
+	2020 roper的博客
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86-%e6%95%8f%e6%8d%b7%e5%bc%80%e5%8f%91" v-on:click="closeDrawer" id="第一部分-敏捷开发-nav">
+										 第一部分 敏捷开发
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86-%e6%95%8f%e6%8d%b7%e8%ae%be%e8%ae%a1" v-on:click="closeDrawer" id="第二部分-敏捷设计-nav">
+										 第二部分 敏捷设计
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86-%e6%a1%88%e4%be%8b%e7%a0%94%e7%a9%b6%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f" v-on:click="closeDrawer" id="第三部分-案例研究设计模式-nav">
+										 第三部分 案例研究（设计模式）
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
 </div>
-
-    </header>
-
     
-    <div class="page-content">
-        <div class="wrapper">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
             
-            <div class="col-main">
-                <div class="post">
-    
-    <header class="post-header">
-        <h1 class="post-title">读书笔记2</h1>
-    </header>
-    <article class="post-content">
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86-%e6%95%8f%e6%8d%b7%e5%bc%80%e5%8f%91" v-on:click="closeDrawer" id="第一部分-敏捷开发-nav">
+										 第一部分 敏捷开发
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86-%e6%95%8f%e6%8d%b7%e8%ae%be%e8%ae%a1" v-on:click="closeDrawer" id="第二部分-敏捷设计-nav">
+										 第二部分 敏捷设计
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e7%ac%ac%e4%b8%89%e9%83%a8%e5%88%86-%e6%a1%88%e4%be%8b%e7%a0%94%e7%a9%b6%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f" v-on:click="closeDrawer" id="第三部分-案例研究设计模式-nav">
+										 第三部分 案例研究（设计模式）
+									</a>
+								</li>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://roperluo32.github.io/">
+            roper的博客
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://roperluo32.github.io/">
+        <div class="single-column-header-title">roper的博客</div>
         
-        
-        
-        
-        
-        
-        <h1 id="第一部分-敏捷开发">第一部分 敏捷开发</h1>
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('/')">
+                <div class="post-title">
+                    读书笔记2
+                    <div class="post-meta">
+                        <time itemprop="datePublished">
+                            2020-02-09 13:39
+                        </time>
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h1 id="第一部分-敏捷开发">第一部分 敏捷开发</h1>
 <ul>
 <li>
 <p>敏捷软件开发宣言</p>
@@ -277,75 +453,46 @@
 </li>
 </ul>
 
-    </article>
-</div>
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2020-02-09</p>
+                </div>
+                
             </div>
             
-            <div class="col-second">
-                <div class="col-box col-box-author">
-    <img class="avatar" src="" alt="">
-    <div class="col-box-title name"></div>
-    <p></p>
-    <p class="contact">
-    </p>
-</div>
+            
+            <nav class="post-pagination">
 
-<div class="col-box">
-    <div class="col-box-title">Newest Posts</div>
-    <ul class="post-list">
-        
-        <li>
-            <a href="https://roperluo32.github.io/posts/%E6%95%8F%E6%8D%B7%E7%BC%96%E7%A8%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-link">读书笔记2</a>
-        </li>
-        
-        <li>
-            <a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B02/" class="post-link">读书笔记2</a>
-        </li>
-        
-        <li>
-            <a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="post-link">读书笔记</a>
-        </li>
-        
-        <li>
-            <a href="https://roperluo32.github.io/posts/hugo-integrated-gitment-plugin/" class="post-link">测试gitcomment插件</a>
-        </li>
-        
-        <li>
-            <a href="https://roperluo32.github.io/posts/my-first-post/" class="post-link">My First Post</a>
-        </li>
-        
-    </ul>
-</div>
+                
+                <a class="newer-posts">
+                    Next<br>No newer posts.
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B02/">
+                    Previous<br>读书笔记2
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
 
-<div class="col-box post-toc hide">
-    <div class="col-box-title">TOC</div>
-</div>
+
+
             </div>
         </div>
     </div>
-    
-    <footer class="footer">
-        <div class="wrapper">
-    © 2020    <a href="https://roperluo32.github.io/"></a>
 </div>
-    </footer>
-    
-    
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.11.0/dist/jquery.min.js"></script>
 
-<script src="/js/easybook.js"></script>
-
-<script src="/js/lazysizes.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery-all.min.js"></script>
-<script src="/js/figure.js"></script>
-
-
-
-
-
-
-
-</body>
-
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+	
+	2020 roper的博客
+	</div>
+    	</div>
+    <script src="https://roperluo32.github.io//js/journal.js"></script>
+    </body>
 </html>
