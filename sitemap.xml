@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://roperluo32.github.io/posts/</loc>
+    <lastmod>2020-02-09T10:00:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://roperluo32.github.io/</loc>
+    <lastmod>2020-02-09T10:00:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B02/</loc>
+    <lastmod>2020-02-09T10:00:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-02-09T09:00:08+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://roperluo32.github.io/tags/github/</loc>
     <lastmod>2020-01-14T14:46:11+08:00</lastmod>
   </url>
@@ -14,16 +34,6 @@
   
   <url>
     <loc>https://roperluo32.github.io/tags/hugo/</loc>
-    <lastmod>2020-01-14T14:46:11+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://roperluo32.github.io/posts/</loc>
-    <lastmod>2020-01-14T14:46:11+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://roperluo32.github.io/</loc>
     <lastmod>2020-01-14T14:46:11+08:00</lastmod>
   </url>
   
@@ -40,11 +50,6 @@
   <url>
     <loc>https://roperluo32.github.io/posts/my-first-post/</loc>
     <lastmod>2020-01-14T11:52:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
