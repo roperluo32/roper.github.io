@@ -1,137 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+<title>Categories</title>
 
-<div class="container">
-  <!DOCTYPE html>
-<html lang="en-us">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
-<title>Categories | roper的博客</title>
-
-<link rel="stylesheet" href="https://roperluo32.github.io//css/styles.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
 
 
 
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
 
 
 
-  <div class="container">
-    <nav class="navbar level">
-      <div class="navbar-brand">
-          <a class="nav-item" href="https://roperluo32.github.io/"><h1 class="title is-3">roper的博客</h1></a>
-      </div>           
-      <div class="navbar-menu has-text-centered is-active">
-          <div class="navbar-end is-centered">
-              
-           </div>
-      </div>
-    </nav>
-  </div>
 
-  <main class="container">
-      
-      
-      <h1 class="title is-3">2020</h1>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Feb 9</h2>
+<link rel="stylesheet" href="https://roperluo32.github.io/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
+
+<script src="https://roperluo32.github.io//js/loadCSS.js"></script>
+<script src="https://roperluo32.github.io//js/table.js"></script>
+
+
+
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://roperluo32.github.io/">
+    
+        <div class="nav-title">
+            roper的博客
         </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B02/">读书笔记2</a></h1>
-          <div class="content is-hidden-mobile">
-            第二篇读书笔记 呵呵呵呵呵呵呵呵呵呵
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+	
+	2020 roper的博客
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
             
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Feb 9</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://roperluo32.github.io/posts/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></h1>
-          <div class="content is-hidden-mobile">
-            这是我的第一篇读书笔记 blablablabla
             
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 14</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://roperluo32.github.io/posts/hugo-integrated-gitment-plugin/">测试gitcomment插件</a></h1>
-          <div class="content is-hidden-mobile">
-            测试评论插件 这是一篇测试评论插件的文章 测试ok后记得要删掉
             
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 14</h2>
         </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://roperluo32.github.io/posts/my-first-post/">My First Post</a></h1>
-          <div class="content is-hidden-mobile">
-            [TOC]
-Hello From Roper 你好阿斯蒂芬斯蒂芬 阿斯利康今飞凯达数据非时代峻峰可视对讲冯老师砥砺奋进
-萨德里克富士康的风景 了空间额外管理局额外价格可文件柜
-hahaha lkfjewjfkjewf 撒地方撒法萨芬考虑的数据放到数据非
-撒六块腹肌独守空房 额胜多负少的丰富的士大夫撒地方sad范德萨范德萨发士大夫士大夫第三方第三方的撒范德萨范德萨解放军积分微积分咖啡机看物流费仍无法网络客服教科文缴费金额为发任务分解二维空间发而非可分为教科文将分开发lkewfjkejfkejffffffffffff方法方法付付付付付付付付付付付付付付付付付付付付付付付付付方法方法付付付付付付付付付付付付付付付付付付付付付付付付付付方法方法付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-sdlkfsdf …
-            
-          </div>
-      </article>
-      
-      
-      
-  </main>
-  <section class="section">
-  <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-          <a class="button is-rounded" disabled>
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
-            </span>
-            Newer
-          </a>
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-          <a class="button is-rounded" disabled>
-            Older
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
-            </span>
-          </a>
-          
-        </div>
-      </div>
-    </nav>
-  </div>
-</section>
-
-  <section class="section">
-  <div class="container has-text-centered">
-    <p></p>
-  </div>
-</section>
-
-
+    </div>
 </div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="https://roperluo32.github.io/">
+            roper的博客
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://roperluo32.github.io/">
+        <div class="single-column-header-title">roper的博客</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <a class="a-block">
+            <div class="post-item-wrapper post-item-wrapper-no-hover">
+                <div class="post-item post-item-no-gaps">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title post-item-title-small">
+                            Categories
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        
+    </div>
+</div>
+
+
+            </div>
+
+
+<div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+	
+	2020 roper的博客
+	</div>
+    	</div>
+    <script src="https://roperluo32.github.io//js/journal.js"></script>
+    </body>
+</html>
